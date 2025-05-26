@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ottopizzas Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="inicio" class="pantalla">
+    <h1>Ottopizzas Runner 🍕</h1>
+    <p>Elegí tu personaje:</p>
+    <div class="skins">
+      <img src="assets/Skin1.png" alt="Otto" data-skin="Skin1.png" />
+      <img src="assets/Skin2.png" alt="Iña" data-skin="Skin2.png" />
+      <img src="assets/Skin3.png" alt="Apu" data-skin="Skin3.png" />
+    </div>
+    <button id="empezarBtn">Empezar</button>
+  </div>
+
+  <canvas id="juego" class="pantalla oculto"></canvas>
+
+  <div id="ganaste" class="pantalla oculto">
+    <h2>¡Ganaste! 🎉</h2>
+    <p>Tenés un 15% de descuento en tu próxima compra en Ottopizzas 🍕</p>
+    <form id="formulario">
+      <input type="text" placeholder="Nombre" required name="nombre" />
+      <input type="text" placeholder="Apellido" required name="apellido" />
+      <input type="tel" placeholder="N° de Teléfono" required name="telefono" />
+      <input type="number" placeholder="Edad" required name="edad" />
+      <input type="text" placeholder="Sabor de Pizza Favorita" required name="sabor" />
+      <button type="submit">Obtener Cupón</button>
+    </form>
+  </div>
+
+  <div id="perdiste" class="pantalla oculto">
+    <h2>¡Perdiste! 😢</h2>
+    <p>Volvé a intentarlo mañana</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
